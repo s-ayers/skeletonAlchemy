@@ -1,0 +1,94 @@
+#promo-1 {
+    min-width : 285px;
+    float: right;
+}
+div#site-name {
+    line-height: 50px;
+    margin-bottom: 14px;
+}
+#header div.form-item-search-block-form {
+    float: left;
+}
+#header #edit-actions, #header #edit-actions--2 {
+    float:left;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+#site-name {
+    margin-top : 0;
+}
+#site-name a {
+    text-indent: -9999px;
+}
+#logo > img {
+    position: relative;
+    top: 15px;
+}
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    #site-slogan > img {
+        margin-left: 50px;
+    }
+}
+#site-slogan > span {
+    display: none;
+}
+#site-slogan {
+    float : right;
+    margin-bottom: -10px;
+    padding-top: 25px;
+}
+#promo-1 #search-block-form {
+    margin-bottom: 0;
+}
+
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    #site-name{
+        float: right;
+        position: relative;
+        right: -110px;
+    }
+}
+/*
+* Admin Menu Hack
+* offset the background image when the admin menu is loaded
+**/
+/* Larger than mobile */
+@media (min-width: 0px) {
+    body.admin-menu #page-wrapper {
+        background-position: right 97px;
+    }
+}
+/* Larger than phablet */
+@media (min-width: 550px) {
+    body.admin-menu #page-wrapper {
+        background-position: right 71px;
+    }
+}
+/* Larger than tablet */
+@media (min-width: 750px) {
+    body.admin-menu #page-wrapper {
+        background-position: right 52px;
+    }
+}
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    body.admin-menu #page-wrapper {
+        background-position: right 45px;
+    }
+}
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+    body.admin-menu #page-wrapper {
+        background-position: right 26px;
+    }
+}
+div.submitted > div.user-picture {
+    float : left;
+    margin-right: 15px;
+}
+div.submitted {
+    margin-bottom: 10px;
+}
