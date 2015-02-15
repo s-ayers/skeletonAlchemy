@@ -1,15 +1,43 @@
 <?php
 
-//###### render fields in user-register.php like this
-print render($form['account']['mail']);
-print render($form['account']['name']);
+hide($form['account']);
+hide($form['actions']);
+?>
 
-// print render ($form['field_firstname']);
-// print render ($form['field_lastname']);
+<div class="crm-container crm-public">
 
-//Don't forget to add this to make the form usable
+	<div class="crm-container crm-public">
+		
+		<fieldset>
+			<legend>Player</legend>
+			<div  class="crm-section form-item">
+				<div class="label">
+					<label for="edit-name--2">In Game Name <span class="crm-marker" title="This field is required.">*</span></label>
+				</div>
+				<div class="edit-value content">
+					<input maxlength="64" size="30" name="name" type="text" id="edit-name--2" class="big crm-form-text required">
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="crm-section form-item">
+				<div class="label">
+					<label for="edit-mail--2">Email <span class="crm-marker" title="This field is required.">*</span></label>
+				</div>
+				<div class="edit-value content">
+					<input maxlength="64" size="30" name="mail" type="text" id="edit-mail--2" class="big crm-form-text required">
+				</div>
+				<div class="clear"></div>
+			</div>
+		</fieldset>
+		
+	</div>
+
+</div>
+<div class="clear"></div>
+<?php
 
 
-  print drupal_render($form['actions']);
-  print drupal_render($form['form_build_id']);
-  print drupal_render($form['form_id']);
+print drupal_render_children($form);
+
+print render($form['actions']);
+
