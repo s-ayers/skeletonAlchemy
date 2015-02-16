@@ -44,8 +44,9 @@ function skeletonalchemy_preprocess_user_register_form(&$vars) {
   $vars['form']['account']['mail']['#title'] = t('Email');
   $vars['form']['account']['mail']['#description'] = t('');
 
-
-  $vars['form']['actions']['#weight'] = 20;
-
+  # Set Civicrm Registeration to be below the login page.
+  if(isset($vars['form']['civicrm-profile-register'])){
+    $vars['form']['civicrm-profile-register']['#weight'] = $vars['form']['account']['#weight'] + 1;
+  }
 
 }
