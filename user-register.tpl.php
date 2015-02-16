@@ -1,9 +1,3 @@
-<?php
-
-hide($form['account']);
-hide($form['actions']);
-?>
-
 <div class="crm-container crm-public">
 
     <div class="crm-container crm-public">
@@ -36,6 +30,13 @@ hide($form['actions']);
 <div class="clear"></div>
 <?php
 
+hide($form['account']);
+
+  if(isset($form['civicrm-profile-register'])){
+    print render($form['civicrm-profile-register']);
+  }
+
+hide($form['actions']);
 
 print drupal_render_children($form);
 
